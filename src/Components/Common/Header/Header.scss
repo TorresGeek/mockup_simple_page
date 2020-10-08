@@ -1,0 +1,200 @@
+@import "../../../PublicStyles.scss";
+
+.HeaderMasterContainer {
+    width: 100%;
+    .BlackHeader {
+        width: 100%;
+        height: 60px;
+        background-color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: white;
+            font-size: $SmallFont1;
+        }
+
+        .BlackHeaderSubcontainer {
+            display: flex;
+            justify-content: space-between;
+            max-width: $MaxWidth;
+            width: 100%;
+            height: 100%;
+
+            .LeftElements {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50%;
+                img {
+                    filter: invert(1);
+                    height: 70%;
+                    padding: 0px 10px 0px 0px;
+                }
+            }
+
+            .RightElements {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 50%;
+                .AccountDiv {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    img {
+                        filter: invert(1);
+                        height: 50%;
+                        padding: 0px 5px 0px 0px;
+                    }
+                }
+
+                .LoginDiv {
+                    display: flex;
+                    padding-left: 40px;
+                    span {
+                        padding: 0px 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .GrayHeader {
+        width: 100%;
+        height: 160px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: #e6e6e6 4px solid;
+
+        .GrayHeaderSubcontainer {
+            max-width: $MaxWidth;
+            display: grid;
+            grid-template-columns: 30% 50% 15% 5%;
+            grid-template-rows: 100%;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+
+            .CompanyNameDiv {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                img {
+                    height: 60%;
+                }
+                span {
+                    font-size: 3rem;
+                }
+            }
+
+            .SearchDiv {
+                display: flex;
+                .TextInput {
+                    width: 65%;
+                    height: 40px;
+                    border: 1px solid rgb(209, 209, 209);
+                    padding: 0px 10px;
+                    box-sizing: border-box;
+
+                    font-size: $SmallFont1;
+                }
+                .SelectInput {
+                    width: 25%;
+                    height: 40px;
+                    border: none;
+                    background-color: white;
+                    padding: 0px 5px;
+                    box-sizing: border-box;
+                    border-top: 1px solid rgb(209, 209, 209);
+                    border-bottom: 1px solid rgb(209, 209, 209);
+                    border-right: 1px solid rgb(209, 209, 209);
+
+                    font-size: $SmallFont1;
+                }
+                .Button {
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: black;
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+
+            .WishlistDiv {
+                justify-self: flex-end;
+                font-size: $SmallFont1;
+                display: flex;
+                align-items: center;
+                span{
+                    padding: 0px 8px
+                }
+            }
+
+            .ShoppingBag {
+                justify-self: flex-end;
+            }
+        }
+    }
+
+    .WhiteHeader {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+        .WhiteHeaderSubcontainer {
+            max-width: $MaxWidth;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 100%;
+
+            .RouterOptions {
+                span {
+                    margin: 0px 15px;
+                }
+
+                span:first-child {
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid rgb(128, 128, 128);
+                    border-bottom-width: 60%;
+                }
+            }
+
+            .BagAndItems {
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: #f4f4f4;
+
+                .ShoppingBag {
+                    height: 65%;
+                }
+
+                .Text {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        padding: 4px 0px;
+                    }
+                }
+
+                .DownArrow {
+                    height: 40%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+@import "../../../PublicStyles.scss";
+
+.FooterMasterContainer {
+    width: 100%;
+    .GrayHeader {
+        width: 100%;
+        height: 440px;
+        background-color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .GrayHeaderSubcontainer {
+            max-width: $MaxWidth;
+            display: grid;
+            grid-template-columns: 30% 20% 20% 30%;
+            grid-template-rows: 20% 80%;
+            width: 100%;
+            height: 80%;
+            align-items: center;
+
+            .LogoAndName {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0px 0px 20px 0px;
+                padding: 0px 30px;
+                box-sizing: border-box;
+
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img {
+                    filter: invert(1);
+                    height: 80px;
+                }
+
+                span {
+                    color: white;
+                    font-size: 2.5rem;
+                }
+            }
+
+            .CompanyAndInformation {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                padding: 0px 40px;
+                box-sizing: border-box;
+                .CompanyDescription {
+                    margin: 0px 0px 30px 0px;
+                    border-bottom: 1px solid rgb(66, 66, 66);
+                    padding: 0px 0px 30px 0px;
+                    span {
+                        color: white;
+                        font-size: $SmallFont1;
+                    }
+                }
+
+                .CompanyDetails {
+                    .Item {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 5px 0px;
+                        img {
+                            filter: contrast(0.2);
+                            padding-right: 15px;
+                            height: 16px;
+                        }
+
+                        span {
+                            color: white;
+                            font-size: $SmallFont1;
+                        }
+                    }
+                }
+            }
+
+            .CategoryTitle0 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            .CategoryDiv0 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+            .CategoryTitle1 {
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+
+            .CategoryTitle2 {
+                grid-column: 4/5;
+                grid-row: 1/2;
+            }
+
+            .CategoryDiv1 {
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+
+            .CategoryDiv2 {
+                grid-column: 4/5;
+                grid-row: 2/3;
+            }
+
+            .CategoryTitle {
+                display: flex;
+                flex-direction: column;
+                padding: 0px 20px;
+                box-sizing: border-box;
+                span {
+                    color: white;
+                }
+
+                .Separator {
+                    padding-top: 10px;
+                    border-bottom: 4px solid white;
+                    width: 50px;
+                }
+            }
+
+            .CategoryDiv {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 0px 20px;
+                box-sizing: border-box;
+
+                .CategoryItem {
+                    color: #a2a2a2;
+                    margin: 0px 0px 15px 0px;
+                    font-size: $SmallFont0;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+            }
+
+            .SendEmailAndSocialMedia {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                padding: 0px 20px;
+                box-sizing: border-box;
+
+
+                span {
+                    color: white;
+                    font-size: $SmallFont1;
+                }
+
+                .CategoryItem {
+                    padding: 10px 0px 50px 0px;
+                }
+
+                .SearchDiv {
+                    display: flex;
+                    .TextInput {
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid rgb(209, 209, 209);
+                        padding: 0px 10px;
+                        box-sizing: border-box;
+                    }
+                    .Button {
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #cacaca;
+                        cursor: pointer;
+                    }
+                }
+
+                .WeNeverShareSpan {
+                    padding: 10px 0px 50px 0px;
+                    font-size: $SmallFont2;
+                }
+
+                .SocialMediaIcons {
+                    display: flex;
+                    img {
+                        height: 20px;
+                        margin-left: 25px;
+                        filter: contrast(0.1);
+                        cursor: pointer;
+                    }
+
+                    img:first-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .BlackHeader {
+        width: 100%;
+        height: 60px;
+        background-color: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: white;
+            font-size: $SmallFont1;
+        }
+
+        .BlackHeaderSubcontainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: $MaxWidth;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

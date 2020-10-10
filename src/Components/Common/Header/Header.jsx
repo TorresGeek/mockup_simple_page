@@ -25,9 +25,9 @@ export default function Header() {
                             <span>My Account</span>
                         </div>
                         <div className="LoginDiv">
-                            <span>Login</span>
+                            <span className="Clickeable">Login</span>
                             <span>/</span>
-                            <span>Register</span>
+                            <span className="Clickeable">Register</span>
                         </div>
                     </div>
 
